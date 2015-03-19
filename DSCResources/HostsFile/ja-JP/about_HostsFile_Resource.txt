@@ -1,0 +1,21 @@
+﻿Syntax
+
+HostsFile [string] #ResourceName
+{
+    HostName = [string]
+
+    IPAddress = [string]
+
+    [ Ensure = [string] { Absent | Present }  ]
+}
+
+Properties
+
+HostName - サーバー か コンピュータ名を指定します。
+
+IPAddress - サーバー や コンピュータ の IPv4 か IPv6 を指定します。
+
+Ensure - hostsファイルにエントリを作る場合、 "Present" を指定します。 "Absent" を指定すると、エントリが存在した場合にのみ削除します。
+
+
+
